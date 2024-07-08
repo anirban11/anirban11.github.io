@@ -3481,6 +3481,42 @@ a.btn.disabled,fieldset:disabled a.btn {
     box-shadow: 0 0 0 .2rem rgba(38,143,255,0.5)
 }
 
+.btn-tool {
+    color: #fff;
+    background-color: #eb2193;
+    border-color: #eb2193
+}
+
+.btn-tool:hover {
+    color: #fff;
+    background-color: #ca157c;
+    border-color: #ca157c
+}
+
+.btn-tool:focus,.btn-tool.focus {
+    color: #fff;
+    background-color: #ca157c;
+    border-color: #ca157c;
+    box-shadow: 0 0 0 .2rem rgba(234, 141, 239, 0.995)
+}
+
+.btn-tool.disabled,.btn-tool:disabled {
+    color: #fff;
+    background-color: #ca157c;
+    border-color: #ca157c
+}
+
+.btn-tool:not(:disabled):not(.disabled):active,.btn-tool.active:not(:disabled):not(.disabled),.show>.btn-tool.dropdown-toggle {
+    color: #fff;
+    background-color: #ca157c;
+    border-color: #ca157c
+}
+
+.btn-tool:not(:disabled):not(.disabled):active:focus,.btn-tool.active:not(:disabled):not(.disabled):focus,.show>.btn-tool.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(234, 141, 239, 0.995)
+}
+
+
 .btn-sm,.btn-group-sm>.btn {
     padding: .25rem .5rem;
     font-size: .875rem;
