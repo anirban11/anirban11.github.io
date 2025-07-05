@@ -3526,3 +3526,25 @@ a.btn.disabled,fieldset:disabled a.btn {
 a {
     color: #0847f2;
 }
+
+.glow-new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: #ff0;
+  color: #d00;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 2px #ffd700, 0 0 2px 1px #fff;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 8px 2px #ffd700, 0 0 2px 1px #fff;
+  }
+  to {
+    box-shadow: 0 0 16px 4px #ffd700, 0 0 4px 2px #fff;
+  }
+}
