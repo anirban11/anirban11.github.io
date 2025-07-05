@@ -3530,21 +3530,10 @@ a {
 .glow-new {
   display: inline-block;
   margin-left: 8px;
-  padding: 2px;
-  background: rgb(29, 29, 23);
-  color: rgb(221, 214, 0);
+  padding: 0px 10px;
+  background: rgb(75, 75, 2);
+  color: rgb(255, 255, 255);
   font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 0 8px 2px #ffd700, 0 0 2px 1px #fff;
+  border-radius: 6px;
   animation: glow 1s infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 8px 2px #ffd700, 0 0 2px 1px #fff;
-  }
-  to {
-    box-shadow: 0 0 16px 4px #ffd700, 0 0 4px 2px #fff;
-  }
 }
