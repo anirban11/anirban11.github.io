@@ -3537,3 +3537,11 @@ a {
   border-radius: 6px;
   animation: glow 1s infinite alternate;
 }
+
+.avatar-square {
+    width: 160px;         /* Set your desired square size */
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;  /* Use 50% for a circle, or 10px for rounded square */
+    display: block;
+}
