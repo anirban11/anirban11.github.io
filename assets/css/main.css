@@ -3545,3 +3545,68 @@ a {
     border-radius: 50%;  /* Use 50% for a circle, or 10px for rounded square */
     display: block;
 }
+
+/* FAQ Section */
+#faq {
+    margin-top: 50px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    background: #e4e4e4;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #c1cdcb;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background: #f9f9f9;
+    border-left: 3px solid #0a8a59;
+    font-size: 0.9rem;
+    color: #333;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.open {
+    max-height: 200px; /* Adjust based on the content */
+    padding: 10px 15px;
+}
+
+/* Loading Icon */
+.loading-icon {
+    width: 20px; /* Size of the loading icon */
+    height: 20px;
+    border: 2px solid #ccc; /* Light grey border */
+    border-top: 2px solid #0a8a59; /* Dark green border for the spinning part */
+    border-radius: 50%; /* Makes it a circle */
+    animation: spin 1s linear infinite; /* Animation for spinning */
+    margin: 1px auto; /* Center the icon */
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
